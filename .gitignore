@@ -1,6 +1,13 @@
+# disk images
+*.iso
+
+# avrcam I2C Test program
+I2C\ Test/
+
 # Object files
 *.o
-*.ko
+*.hex
+*.elf
 
 # Libraries
 *.lib
@@ -16,4 +23,3 @@
 *.exe
 *.out
 *.app
-*.hex
