@@ -1,0 +1,32 @@
+!SESSION 2013-12-01 03:57:30.873 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/matthew/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/matthew/code/embedded/arm/lpc -keyring /Users/matthew/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-01 03:57:35.294
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-12-01 03:58:42.425 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/matthew/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/matthew/code/embedded/arm/lpc -keyring /Users/matthew/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-12-01 03:58:46.653
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-12-01 03:59:25.565
+!MESSAGE Indexed 'CMSIS_CORE_LPC17xx' (1 sources, 14 headers) in 0.64 sec: 1,264 declarations; 2,252 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-12-01 03:59:25.886
+!MESSAGE Indexed 'test' (2 sources, 16 headers) in 0.32 sec: 1,425 declarations; 2,182 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-12-01 03:59:25.941
+!MESSAGE Indexed 'timer' (3 sources, 3 headers) in 0.05 sec: 207 declarations; 247 references; 5 unresolved inclusions; 0 syntax errors; 198 unresolved names (30.37%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-12-01 04:00:04.728
+!MESSAGE Indexed 'timerblink' (2 sources, 5 headers) in 0.20 sec: 1,146 declarations; 1,116 references; 4 unresolved inclusions; 18 syntax errors; 817 unresolved names (26.53%)

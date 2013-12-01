@@ -1,0 +1,56 @@
+04:00:19 **** Clean-only build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make clean 
+rm -rf  ./src/system_LPC17xx.o  ./src/system_LPC17xx.d  libCMSIS_CORE_LPC17xx.a
+ 
+04:00:19 **** Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make all 
+Building file: ../src/system_LPC17xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSIS_CORE_LPC17xx -I"/Users/matthew/code/embedded/arm/lpc/CMSIS_CORE_LPC17xx/inc" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/system_LPC17xx.d" -MT"src/system_LPC17xx.d" -o "src/system_LPC17xx.o" "../src/system_LPC17xx.c"
+Finished building: ../src/system_LPC17xx.c
+arm-none-eabi-ar: creating libCMSIS_CORE_LPC17xx.a
+ 
+Building target: libCMSIS_CORE_LPC17xx.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libCMSIS_CORE_LPC17xx.a"  ./src/system_LPC17xx.o   
+Finished building target: libCMSIS_CORE_LPC17xx.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "libCMSIS_CORE_LPC17xx.a" ; # arm-none-eabi-objdump -h -S "libCMSIS_CORE_LPC17xx.a" >"libCMSIS_CORE_LPC17xx.lss"
+   text	   data	    bss	    dec	    hex	filename
+    432	      4	      0	    436	    1b4	system_LPC17xx.o (ex libCMSIS_CORE_LPC17xx.a)
+ 
+04:00:20 **** Clean-only build of configuration Debug for project timerblink ****
+make clean 
+rm -rf  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o  ./src/blinky.d ./src/cr_startup_lpc175x_6x.d  test.axf
+ 
+04:00:20 **** Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/arm/lpc/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+Finished building: ../src/blinky.c
+ 
+Building file: ../src/cr_startup_lpc175x_6x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/arm/lpc/CMSIS_CORE_LPC17xx/inc" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc175x_6x.d" -MT"src/cr_startup_lpc175x_6x.d" -o "src/cr_startup_lpc175x_6x.o" "../src/cr_startup_lpc175x_6x.c"
+Finished building: ../src/cr_startup_lpc175x_6x.c
+ 
+Building target: timerblink.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/arm/lpc/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+Finished building target: timerblink.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+    976	      0	      4	    980	    3d4	timerblink.axf
+ 
+04:00:34 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make all 
+make: Nothing to be done for `all'.
+04:00:35 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+make: Nothing to be done for `all'.
