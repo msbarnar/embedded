@@ -1,0 +1,279 @@
+00:31:10 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make all 
+make: Nothing to be done for `all'.
+00:31:11 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+Finished building: ../src/blinky.c
+ 
+Building target: timerblink.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+Finished building target: timerblink.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+    976	      0	      4	    980	    3d4	timerblink.axf
+ 
+00:31:28 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+make: Nothing to be done for `all'.
+01:12:52 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make all 
+make: Nothing to be done for `all'.
+01:12:53 **** Incremental Build of configuration Debug for project I2C ****
+make all 
+Building file: ../src/cr_startup_lpc176x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2_LPC17xx -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc176x.d" -MT"src/cr_startup_lpc176x.d" -o "src/cr_startup_lpc176x.o" "../src/cr_startup_lpc176x.c"
+../src/cr_startup_lpc176x.c:51:28: fatal error: system_LPC17xx.h: No such file or directory
+compilation terminated.
+make: *** [src/cr_startup_lpc176x.o] Error 1
+01:12:57 **** Incremental Build of configuration Debug for project adafruit_lsm303 ****
+make all 
+make: Nothing to be done for `all'.
+01:13:00 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+../src/blinky.c: In function 'main':
+../src/blinky.c:68:3: warning: implicit declaration of function 'init_gpio_int' [-Wimplicit-function-declaration]
+../src/blinky.c: At top level:
+Finished building: ../src/blinky.c
+ 
+../src/blinky.c:80:6: warning: conflicting types for 'init_gpio_int' [enabled by default]
+Building target: timerblink.axf
+Invoking: MCU Linker
+../src/blinky.c:68:3: note: previous implicit declaration of 'init_gpio_int' was here
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+Finished building target: timerblink.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1124	      0	      4	   1128	    468	timerblink.axf
+ 
+01:13:04 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+make: Nothing to be done for `all'.
+01:20:04 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+../src/blinky.c: In function 'main':
+Finished building: ../src/blinky.c
+../src/blinky.c:72:3: warning: implicit declaration of function 'init_gpio_int' [-Wimplicit-function-declaration]
+../src/blinky.c: At top level:
+../src/blinky.c:84:6: warning: conflicting types for 'init_gpio_int' [enabled by default]
+ 
+../src/blinky.c:72:3: note: previous implicit declaration of 'init_gpio_int' was here
+Building target: timerblink.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+Finished building target: timerblink.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1132	      0	      4	   1136	    470	timerblink.axf
+ 
+01:21:25 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+../src/blinky.c: In function 'main':
+Finished building: ../src/blinky.c
+../src/blinky.c:72:3: warning: implicit declaration of function 'init_gpio_int' [-Wimplicit-function-declaration]
+ 
+../src/blinky.c: At top level:
+Building target: timerblink.axf
+../src/blinky.c:84:6: warning: conflicting types for 'init_gpio_int' [enabled by default]
+Invoking: MCU Linker
+../src/blinky.c:72:3: note: previous implicit declaration of 'init_gpio_int' was here
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+Finished building target: timerblink.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1132	      0	      4	   1136	    470	timerblink.axf
+ 
+02:01:52 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+make: Nothing to be done for `all'.
+02:06:58 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+make: Nothing to be done for `all'.
+02:13:07 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+../src/blinky.c: In function 'main':
+../src/blinky.c:73:3: warning: implicit declaration of function 'init_gpio_int' [-Wimplicit-function-declaration]
+Finished building: ../src/blinky.c
+../src/blinky.c: At top level:
+ 
+../src/blinky.c:85:6: warning: conflicting types for 'init_gpio_int' [enabled by default]
+Building target: timerblink.axf
+../src/blinky.c:73:3: note: previous implicit declaration of 'init_gpio_int' was here
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+Finished building target: timerblink.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1152	      0	      4	   1156	    484	timerblink.axf
+ 
+02:16:53 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+../src/blinky.c: In function 'main':
+../src/blinky.c:74:3: warning: implicit declaration of function 'init_gpio_int' [-Wimplicit-function-declaration]
+Finished building: ../src/blinky.c
+ 
+Building target: timerblink.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+../src/blinky.c: At top level:
+Finished building target: timerblink.axf
+../src/blinky.c:87:6: warning: conflicting types for 'init_gpio_int' [enabled by default]
+ 
+../src/blinky.c:74:3: note: previous implicit declaration of 'init_gpio_int' was here
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1176	      0	      4	   1180	    49c	timerblink.axf
+ 
+02:19:06 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+../src/blinky.c: In function 'main':
+../src/blinky.c:74:3: warning: implicit declaration of function 'init_gpio_int' [-Wimplicit-function-declaration]
+Finished building: ../src/blinky.c
+ 
+Building target: timerblink.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+../src/blinky.c: At top level:
+Finished building target: timerblink.axf
+../src/blinky.c:87:6: warning: conflicting types for 'init_gpio_int' [enabled by default]
+ 
+../src/blinky.c:74:3: note: previous implicit declaration of 'init_gpio_int' was here
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1176	      0	      4	   1180	    49c	timerblink.axf
+ 
+02:22:12 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+../src/blinky.c: In function 'main':
+Finished building: ../src/blinky.c
+ 
+../src/blinky.c:74:3: warning: implicit declaration of function 'init_gpio_int' [-Wimplicit-function-declaration]
+Building target: timerblink.axf
+../src/blinky.c: At top level:
+../src/blinky.c:87:6: warning: conflicting types for 'init_gpio_int' [enabled by default]
+Invoking: MCU Linker
+../src/blinky.c:74:3: note: previous implicit declaration of 'init_gpio_int' was here
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+Finished building target: timerblink.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1176	      0	      4	   1180	    49c	timerblink.axf
+ 
+02:24:52 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC17xx ****
+make all 
+make: Nothing to be done for `all'.
+02:24:53 **** Incremental Build of configuration Debug for project I2C ****
+make all 
+Building file: ../src/cr_startup_lpc176x.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv2_LPC17xx -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/cr_startup_lpc176x.d" -MT"src/cr_startup_lpc176x.d" -o "src/cr_startup_lpc176x.o" "../src/cr_startup_lpc176x.c"
+../src/cr_startup_lpc176x.c:51:28: fatal error: system_LPC17xx.h: No such file or directory
+compilation terminated.
+make: *** [src/cr_startup_lpc176x.o] Error 1
+02:24:54 **** Incremental Build of configuration Debug for project adafruit_lsm303 ****
+make all 
+make: Nothing to be done for `all'.
+02:24:56 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+Finished building: ../src/blinky.c
+ 
+Building target: timerblink.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+Finished building target: timerblink.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1172	      0	      4	   1176	    498	timerblink.axf
+ 
+02:25:15 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+make: Nothing to be done for `all'.
+02:30:51 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+Finished building: ../src/blinky.c
+ 
+Building target: timerblink.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+Finished building target: timerblink.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1172	      0	      4	   1176	    498	timerblink.axf
+ 
+02:32:53 **** Incremental Build of configuration Debug for project timerblink ****
+make all 
+Building file: ../src/blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -I"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -std=c99 -mcpu=cortex-m3 -mthumb -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+Finished building: ../src/blinky.c
+ 
+Building target: timerblink.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/Users/matthew/code/embedded/scooter/arm/CMSIS_CORE_LPC17xx/Debug" -Xlinker -Map="timerblink.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "timerblink_Debug.ld" -o "timerblink.axf"  ./src/blinky.o ./src/cr_startup_lpc175x_6x.o   -lCMSIS_CORE_LPC17xx
+Finished building target: timerblink.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "timerblink.axf"; # arm-none-eabi-objcopy -O binary "timerblink.axf" "timerblink.bin" ; checksum -p LPC1769 -d "timerblink.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1172	      0	      4	   1176	    498	timerblink.axf
+ 
