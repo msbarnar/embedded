@@ -1,0 +1,157 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		347A36B61908AEA100F9408F /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = src/main.c; sourceTree = "<group>"; };
+		347A36B71908AEA100F9408F /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		347A36B81908AF7500F9408F /* tft_gpio16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tft_gpio16.h; path = include/tft_gpio16.h; sourceTree = "<group>"; };
+		347A36B91908B05100F9408F /* tft_gpio16.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tft_gpio16.c; path = src/tft_gpio16.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		342322BA19089C8400310FDE = {
+			isa = PBXGroup;
+			children = (
+				347A36BB1908BC0600F9408F /* include */,
+				347A36BA1908BBFB00F9408F /* src */,
+				347A36B71908AEA100F9408F /* makefile */,
+			);
+			sourceTree = "<group>";
+		};
+		347A36BA1908BBFB00F9408F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				347A36B91908B05100F9408F /* tft_gpio16.c */,
+				347A36B61908AEA100F9408F /* main.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		347A36BB1908BC0600F9408F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				347A36B81908AF7500F9408F /* tft_gpio16.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		342322F21908A18600310FDE /* build */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 342322F31908A18600310FDE /* Build configuration list for PBXLegacyTarget "build" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/matthew/code/embedded/avr/lib/ssd1239;
+			dependencies = (
+			);
+			name = build;
+			passBuildSettingsInEnvironment = 1;
+			productName = ssd1239;
+		};
+		342322FB1908AAA600310FDE /* deploy */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = install;
+			buildConfigurationList = 342322FC1908AAA600310FDE /* Build configuration list for PBXLegacyTarget "deploy" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/matthew/code/embedded/avr/lib/ssd1239;
+			dependencies = (
+			);
+			name = deploy;
+			passBuildSettingsInEnvironment = 1;
+			productName = deploy;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		342322BB19089C8400310FDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 342322BE19089C8400310FDE /* Build configuration list for PBXProject "ssd1289" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 342322BA19089C8400310FDE;
+			productRefGroup = 342322BA19089C8400310FDE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				342322F21908A18600310FDE /* build */,
+				342322FB1908AAA600310FDE /* deploy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		342322C019089C8400310FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BIN_DIR = build;
+				CLOCK = 1000000;
+				DEVICE = atmega8;
+				FUSE_H = 0xD9;
+				FUSE_L = 0xE1;
+				PROGRAMMER = usbtiny;
+				SOURCES = "tft_gpio16.c main.c";
+				SRC_DIR = src;
+			};
+			name = Release;
+		};
+		342322F51908A18600310FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		342322FD1908AAA600310FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		342322BE19089C8400310FDE /* Build configuration list for PBXProject "ssd1289" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342322C019089C8400310FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		342322F31908A18600310FDE /* Build configuration list for PBXLegacyTarget "build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342322F51908A18600310FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		342322FC1908AAA600310FDE /* Build configuration list for PBXLegacyTarget "deploy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342322FD1908AAA600310FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 342322BB19089C8400310FDE /* Project object */;
+}
